@@ -9,30 +9,77 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header>
+    <div class="page-wrapper">
+      <header class="header">
         <div class="header__container container">
           <div class="header__wrapper wrapper">
-            <a class="header__logo" href="#">
-              <img
-                class="header__logo-icon"
-                src="img/svg/logo-lifetour.svg"
-                width="122"
-                height="44"
-                alt="Supergym."
-              />
-            </a>
-            <nav class="header__menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-item">Туры</li>
-                <li class="header__menu-item">Обучение</li>
-                <li class="header__menu-item">О нас</li>
-                <li class="header__menu-item">Отзывы</li>
-                <li class="header__menu-item">Фотографии</li>
-                <li class="header__menu-item">Контакты</li>
-              </ul>
-            </nav>
-            <a class="header__tel" href="tel:88005555555">8 800 725 32 32</a>
+            <div class="header__positioning-wrapper">
+              <div class="heder__links-wrapper">
+                <button class="header__mob-menu-button">
+                  <svg
+                    class="header__mob-menu-icon-burger"
+                    role="img"
+                    aria-label="menu."
+                    width="26"
+                    height="26"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26"
+                  >
+                    <use href="./img/sprite.svg#menu" />
+                  </svg>
+                  <svg
+                    class="header__mob-menu-icon-cross"
+                    role="img"
+                    aria-label="cross."
+                    width="22"
+                    height="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 22 22"
+                  >
+                    <use href="./img/sprite.svg#cross" />
+                  </svg>
+                  <span class="visually-hidden">Открыть или закрыть меню</span>
+                </button>
+                <a class="header__logo" href="#">
+                  <svg
+                    class="header__logo-icon"
+                    role="img"
+                    aria-label="logo-lifetour."
+                    width="205"
+                    height="62"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 205 62"
+                  >
+                    <use href="./img/sprite.svg#logo-lifetour" />
+                  </svg>
+                </a>
+                <a class="header__tel" href="tel:88005555555"
+                  >8 800 725 32 32</a
+                >
+              </div>
+              <nav class="header__menu">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Туры</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Обучение</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">О нас</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Отзывы</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Фотографии</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
@@ -49,7 +96,9 @@
                 потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину
                 горы Чегет.
               </p>
-              <a class="hero__button" href="#">Смотреть тур</a>
+              <a class="hero__button button-dark-background" href="#"
+                >Смотреть тур</a
+              >
               <ul class="hero__list">
                 <li class="hero__item">
                   <svg
@@ -86,40 +135,61 @@
                     <source
                       type="image/webp"
                       media="(min-width: 1200px)"
-                      srcset="img/hero-video.webp 1x, img/hero-video@2x.webp 2x"
+                      srcset="
+                        img/hero/hero-video.webp    1x,
+                        img/hero/hero-video@2x.webp 2x
+                      "
                     />
                     <source
                       media="(max-width: 1199px)"
                       srcset="
-                        img/hero-video-tab.webp    1x,
-                        img/hero-video-tab@2x.webp 2x
+                        img/hero/hero-video-tab.webp    1x,
+                        img/hero/hero-video-tab@2x.webp 2x
                       "
                     />
                     <source
                       type="image/webp"
                       media="(min-width: 1200px)"
-                      srcset="img/hero-video.jpg 1x, img/hero-video@2x.jpg 2x"
+                      srcset="
+                        img/hero/hero-video.jpg    1x,
+                        img/hero/hero-video@2x.jpg 2x
+                      "
                     />
                     <source
                       media="(max-width: 1199px)"
                       srcset="
-                        img/hero-video-tab.jpg    1x,
-                        img/hero-video-tab@2x.jpg 2x
+                        img/hero/hero-video-tab.jpg    1x,
+                        img/hero/hero-video-tab@2x.jpg 2x
                       "
                     />
                     <img
                       class="hero__video-cover-image"
-                      src="img/hero-video.jpg"
+                      src="img/hero/hero-video.jpg"
                       alt="видео похода."
                       width="482"
                       height="317"
-                      srcset="img/hero-video@2x.jpg 2x"
+                      srcset="img/hero/hero-video@2x.jpg 2x"
                     />
                   </picture>
-                  <button
-                    class="hero__video-cover-button"
-                    type="button"
-                  ></button>
+                  <button class="hero__video-cover-button" type="button">
+                    <svg
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="28"
+                        cy="28"
+                        r="27.5"
+                        fill="white"
+                        fill-opacity="0.2"
+                        stroke="white"
+                      />
+                      <path d="M37 28L25 17V39L37 28Z" fill="white" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1338,15 +1408,308 @@
               </p>
               <ul class="gallery__list">
                 <li class="gallery__item">
-                  <div class="gallery__item-wrapper"></div>
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img"
+                      src="img/gallery/gallery1.jpg"
+                      alt="фото из похода."
+                      width="275"
+                      height="449"
+                      srcset="img/gallery/gallery1@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img-top"
+                      src="img/gallery/gallery2.jpg"
+                      alt="фото из похода."
+                      width="298"
+                      height="179"
+                      srcset="img/gallery/gallery2@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img-bottom"
+                      src="img/gallery/gallery3.jpg"
+                      alt="фото из похода."
+                      width="298"
+                      height="265"
+                      srcset="img/gallery/gallery3@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img"
+                      src="img/gallery/gallery4.jpg"
+                      alt="фото из похода."
+                      width="275"
+                      height="449"
+                      srcset="img/gallery/gallery4@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img-top"
+                      src="img/gallery/gallery5.jpg"
+                      alt="фото из похода."
+                      width="298"
+                      height="179"
+                      srcset="img/gallery/gallery5@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img-bottom"
+                      src="img/gallery/gallery6.jpg"
+                      alt="фото из похода."
+                      width="298"
+                      height="265"
+                      srcset="img/gallery/gallery6@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img"
+                      src="img/gallery/gallery7.jpg"
+                      alt="фото из похода."
+                      width="275"
+                      height="449"
+                      srcset="img/gallery/gallery7@2x.jpg 2x"
+                    />
+                  </div>
                 </li>
               </ul>
             </div>
           </div>
         </section>
+        <section class="form">
+          <div class="form__container container">
+            <div class="form__wrapper wrapper">
+              <h2 class="form__title section-title">Остались вопросы?</h2>
+              <p class="form__description">
+                Заполните форму и наш оператор свяжется с вами для консультации.
+              </p>
+              <div data-callback="base" data-form-validate>
+                <form
+                  class="form__form"
+                  action="https://echo.htmlacademy.ru/"
+                  method="post"
+                >
+                  <div class="form__form-input-container">
+                    <label
+                      for="user-name"
+                      data-validate-type="text"
+                      data-limitation="letters"
+                      data-message-base="Пустое поле"
+                      data-message-extra="Ошибка"
+                      data-required
+                    >
+                      <input
+                        type="text"
+                        name="user-name"
+                        id="user-name"
+                        placeholder="Как к вам обращаться?"
+                        required
+                      />
+                      <span></span>
+                    </label>
+                    <label
+                      for="user-tel-number"
+                      data-matrix-limitation="digit"
+                      data-message-base="Пустое поле"
+                      data-message-extra="Ошибка"
+                      data-validate-type="phone"
+                      data-required
+                    >
+                      <input
+                        type="tel"
+                        name="user-tel-number"
+                        id="user-tel-number"
+                        placeholder="Телефон"
+                        required
+                      />
+                      <span></span>
+                    </label>
+                  </div>
+                  <button
+                    class="form__form-button button-dark-background"
+                    type="submit"
+                  >
+                    отправить
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container container">
+            <div class="contacts__wrapper wrapper">
+              <h2 class="contacts__title section-title">Контакты</h2>
+              <p class="contacts__description">
+                Свяжитесь с нами любым удобным для вас способом или приходите к
+                нам в гости. Мы будем рады поделиться увлекательными историями и
+                подобрать для вас тур.
+              </p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <svg
+                    class="contacts__item-icon"
+                    role="img"
+                    aria-label="phone."
+                    width="26"
+                    height="26"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26"
+                  >
+                    <use href="./img/sprite.svg#phone" />
+                  </svg>
+                  <div class="contacts__item-description-wrapper">
+                    <h3 class="contacts__item-title">Телефон</h3>
+                    <p class="contacts__item-description">
+                      <a class="contacts__item-link" href="tel:89837454545">
+                        8 983 745 45 45
+                      </a>
+                    </p>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <svg
+                    class="contacts__item-icon"
+                    role="img"
+                    aria-label="mail."
+                    width="26"
+                    height="26"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26"
+                  >
+                    <use href="./img/sprite.svg#mail" />
+                  </svg>
+                  <div class="contacts__item-description-wrapper">
+                    <h3 class="contacts__item-title">E-mail</h3>
+                    <p class="contacts__item-description">
+                      <a
+                        class="contacts__item-link"
+                        href="mailto:info@lifetour.com"
+                      >
+                        info@lifetour.com
+                      </a>
+                    </p>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <svg
+                    class="contacts__item-icon"
+                    role="img"
+                    aria-label="mail."
+                    width="26"
+                    height="26"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26"
+                  >
+                    <use href="./img/sprite.svg#mail" />
+                  </svg>
+                  <div class="contacts__item-description-wrapper">
+                    <h3 class="contacts__item-title">Адрес</h3>
+                    <p class="contacts__item-description">
+                      г. Москва, пр-т Мира, д. 14, офис 101
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div class="contacts__map-wrapper"></div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__wrapper wrapper">
+            <div class="footer__top-wrapper">
+              <a class="footer__logo" href="#">
+                <img
+                  class="footer__logo-icon"
+                  src="img/svg/logo-lifetour.svg"
+                  width="122"
+                  height="44"
+                  alt="Supergym."
+                />
+              </a>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">Туры</li>
+                  <li class="footer__menu-item">Обучение</li>
+                  <li class="footer__menu-item">О нас</li>
+                  <li class="footer__menu-item">Отзывы</li>
+                  <li class="footer__menu-item">Фотографии</li>
+                  <li class="footer__menu-item">Контакты</li>
+                </ul>
+              </nav>
+              <a class="footer__tel" href="tel:88005555555">8 800 725 32 32</a>
+            </div>
+          </div>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <div class="footer__social-item-wrapper">
+                <svg
+                  class="footer__item-icon"
+                  role="img"
+                  aria-label="vk."
+                  width="16"
+                  height="9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 9"
+                >
+                  <use href="./img/sprite.svg#vk" />
+                </svg>
+              </div>
+            </li>
+            <li class="footer__social-item">
+              <div class="footer__social-item-wrapper">
+                <svg
+                  class="footer__item-icon"
+                  role="img"
+                  aria-label="ok."
+                  width="9"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 9 16"
+                >
+                  <use href="./img/sprite.svg#ok" />
+                </svg>
+              </div>
+            </li>
+            <li class="footer__social-item">
+              <div class="footer__social-item-wrapper">
+                <svg
+                  class="footer__item-icon"
+                  role="img"
+                  aria-label="reddit."
+                  width="14"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 14 15"
+                >
+                  <use href="./img/sprite.svg#reddit" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <p class="footer__policy"></p>
+        </div>
       </footer>
     </div>
 

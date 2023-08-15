@@ -9,30 +9,77 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header>
+    <div class="page-wrapper">
+      <header class="header">
         <div class="header__container container">
           <div class="header__wrapper wrapper">
-            <a class="header__logo" href="#">
-              <img
-                class="header__logo-icon"
-                src="img/svg/logo-lifetour.svg"
-                width="122"
-                height="44"
-                alt="Supergym."
-              />
-            </a>
-            <nav class="header__menu">
-              <ul class="header__menu-list">
-                <li class="header__menu-item">Туры</li>
-                <li class="header__menu-item">Обучение</li>
-                <li class="header__menu-item">О нас</li>
-                <li class="header__menu-item">Отзывы</li>
-                <li class="header__menu-item">Фотографии</li>
-                <li class="header__menu-item">Контакты</li>
-              </ul>
-            </nav>
-            <a class="header__tel" href="tel:88005555555">8 800 725 32 32</a>
+            <div class="header__positioning-wrapper">
+              <div class="heder__links-wrapper">
+                <button class="header__mob-menu-button">
+                  <svg
+                    class="header__mob-menu-icon-burger"
+                    role="img"
+                    aria-label="menu."
+                    width="26"
+                    height="26"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26"
+                  >
+                    <use href="./img/sprite.svg#menu" />
+                  </svg>
+                  <svg
+                    class="header__mob-menu-icon-cross"
+                    role="img"
+                    aria-label="cross."
+                    width="22"
+                    height="22"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 22 22"
+                  >
+                    <use href="./img/sprite.svg#cross" />
+                  </svg>
+                  <span class="visually-hidden">Открыть или закрыть меню</span>
+                </button>
+                <a class="header__logo" href="#">
+                  <svg
+                    class="header__logo-icon"
+                    role="img"
+                    aria-label="logo-lifetour."
+                    width="205"
+                    height="62"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 205 62"
+                  >
+                    <use href="./img/sprite.svg#logo-lifetour" />
+                  </svg>
+                </a>
+                <a class="header__tel" href="tel:88005555555"
+                  >8 800 725 32 32</a
+                >
+              </div>
+              <nav class="header__menu">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Туры</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Обучение</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">О нас</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Отзывы</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Фотографии</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </header>
@@ -45,10 +92,13 @@
             <div class="hero__wrapper wrapper">
               <h2 class="hero__title">Захватывающие вершины Кавказа</h2>
               <p class="hero__description">
-                В сопровождении опытных гидов вы пройдете через потрясающие
-                ландшафты и совершите восход на вершину горы Чегет.
+                В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через
+                потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину
+                горы Чегет.
               </p>
-              <a class="hero__button" href="#">Смотреть тур</a>
+              <a class="hero__button button-dark-background" href="#"
+                >Смотреть тур</a
+              >
               <ul class="hero__list">
                 <li class="hero__item">
                   <svg
@@ -82,51 +132,1584 @@
               <div class="hero__video-container">
                 <div class="hero__video-cover">
                   <picture>
-                    <!-- <source
+                    <source
                       type="image/webp"
                       media="(min-width: 1200px)"
-                      srcset="img/hero-video.webp 1x, img/hero-video@2x.webp 2x"
-                    />
-                    <source
-                      media="(max-width: 1199px)"
                       srcset="
-                        img/hero-video-tab.webp    1x,
-                        img/hero-video-tab@2x.webp 2x
+                        img/hero/hero-video.webp    1x,
+                        img/hero/hero-video@2x.webp 2x
                       "
-                    /> -->
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1200px)"
-                      srcset="img/hero-video.jpg 1x, img/hero-video@2x.jpg 2x"
                     />
                     <source
                       media="(max-width: 1199px)"
                       srcset="
-                        img/hero-video-tab.jpg    1x,
-                        img/hero-video-tab@2x.jpg 2x
+                        img/hero/hero-video-tab.webp    1x,
+                        img/hero/hero-video-tab@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1200px)"
+                      srcset="
+                        img/hero/hero-video.jpg    1x,
+                        img/hero/hero-video@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        img/hero/hero-video-tab.jpg    1x,
+                        img/hero/hero-video-tab@2x.jpg 2x
                       "
                     />
                     <img
                       class="hero__video-cover-image"
-                      src="img/hero-video.jpg"
+                      src="img/hero/hero-video.jpg"
                       alt="видео похода."
                       width="482"
                       height="317"
-                      srcset="img/hero-video@2x.jpg 2x"
+                      srcset="img/hero/hero-video@2x.jpg 2x"
                     />
                   </picture>
-                  <button
-                    class="hero__video-cover-button"
-                    type="button"
-                  ></button>
+                  <button class="hero__video-cover-button" type="button">
+                    <svg
+                      width="56"
+                      height="56"
+                      viewBox="0 0 56 56"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="28"
+                        cy="28"
+                        r="27.5"
+                        fill="white"
+                        fill-opacity="0.2"
+                        stroke="white"
+                      />
+                      <path d="M37 28L25 17V39L37 28Z" fill="white" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <section class="tours">
+          <div class="tours__container container">
+            <div class="tours__wrapper wrapper">
+              <h2 class="tours__title section-title">Ближайшие туры</h2>
+              <ul class="tours__list">
+                <li class="tours__item tour-card">
+                  <div class="tour-card__wrapper tour-card__wrapper--caucasus">
+                    <ul class="tour-card__top-list">
+                      <li
+                        class="tour-card__top-item tour-card__top-item--place"
+                      >
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="pin."
+                          width="9"
+                          height="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 9 12"
+                        >
+                          <use href="./img/sprite.svg#pin" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          Кавказ
+                        </span>
+                      </li>
+                      <li class="tour-card__top-item">
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="sun."
+                          width="20"
+                          height="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <use href="./img/sprite.svg#sun" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          4 дня
+                        </span>
+                      </li>
+                      <li class="tour-card__top-item">
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="moon."
+                          width="20"
+                          height="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <use href="./img/sprite.svg#moon" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          3 ночи
+                        </span>
+                      </li>
+                    </ul>
+                    <h3 class="tour-card__title">
+                      Путешествие вокруг Эльбруса
+                    </h3>
+                    <ul class="tour-card__bottom-list">
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Сложность:</span
+                        >
+                        <span class="tour-card__bottom-item-description"></span>
+                      </li>
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Даты набора:</span
+                        >
+                        <span class="tour-card__bottom-item-description"
+                          >12.06-19.06</span
+                        >
+                      </li>
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Группа:</span
+                        >
+                        <span class="tour-card__bottom-item-description"
+                          >до 15 чел.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="tours__item tour-card">
+                  <div class="tour-card__wrapper tour-card__wrapper--altay">
+                    <ul class="tour-card__top-list">
+                      <li
+                        class="tour-card__top-item tour-card__top-item--place"
+                      >
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="pin."
+                          width="9"
+                          height="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 9 12"
+                        >
+                          <use href="./img/sprite.svg#pin" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          Алтай
+                        </span>
+                      </li>
+                      <li class="tour-card__top-item">
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="sun."
+                          width="20"
+                          height="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <use href="./img/sprite.svg#sun" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          14 дней
+                        </span>
+                      </li>
+                      <li class="tour-card__top-item">
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="moon."
+                          width="20"
+                          height="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <use href="./img/sprite.svg#moon" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          13 ночей
+                        </span>
+                      </li>
+                    </ul>
+                    <h3 class="tour-card__title">Путь к подножию Белухи</h3>
+                    <ul class="tour-card__bottom-list">
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Сложность:</span
+                        >
+                        <span class="tour-card__bottom-item-description"></span>
+                      </li>
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Даты набора:</span
+                        >
+                        <span class="tour-card__bottom-item-description"
+                          >14.06-23.06</span
+                        >
+                      </li>
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Группа:</span
+                        >
+                        <span class="tour-card__bottom-item-description"
+                          >до 25 чел.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="tours__item tour-card">
+                  <div class="tour-card__wrapper tour-card__wrapper--adygea">
+                    <ul class="tour-card__top-list">
+                      <li
+                        class="tour-card__top-item tour-card__top-item--place"
+                      >
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="pin."
+                          width="9"
+                          height="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 9 12"
+                        >
+                          <use href="./img/sprite.svg#pin" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          Адыгея
+                        </span>
+                      </li>
+                      <li class="tour-card__top-item">
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="sun."
+                          width="20"
+                          height="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <use href="./img/sprite.svg#sun" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          7 дней
+                        </span>
+                      </li>
+                      <li class="tour-card__top-item">
+                        <svg
+                          class="tour-card__top-item-icon"
+                          role="img"
+                          aria-label="moon."
+                          width="20"
+                          height="20"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20"
+                        >
+                          <use href="./img/sprite.svg#moon" />
+                        </svg>
+                        <span class="tour-card__top-item-description">
+                          6 ночей
+                        </span>
+                      </li>
+                    </ul>
+                    <h3 class="tour-card__title">Через Фишт к Черному морю</h3>
+                    <ul class="tour-card__bottom-list">
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Сложность:</span
+                        >
+                        <span class="tour-card__bottom-item-description"></span>
+                      </li>
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Даты набора:</span
+                        >
+                        <span class="tour-card__bottom-item-description"
+                          >15.07-19.07</span
+                        >
+                      </li>
+                      <li class="tour-card__bottom-item">
+                        <span class="tour-card__bottom-item-title"
+                          >Группа:</span
+                        >
+                        <span class="tour-card__bottom-item-description"
+                          >до 22 чел.</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <a class="tours__more-link" href="#">
+                <span class="tours__more-link-description"
+                  >Показать все туры</span
+                >
+                <svg
+                  class="tours__more-link--icon"
+                  role="img"
+                  aria-label="right."
+                  width="12"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 12 6"
+                >
+                  <use href="./img/sprite.svg#right" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="education">
+          <div class="education__container container">
+            <div class="education__wrapper wrapper">
+              <h2 class="education__title section-title">Обучение</h2>
+              <p class="education__description">
+                Обучение проводится квалифицированными специалистами,
+                за&nbsp;плечами которых десятки пройденных маршрутов Кавказа,
+                Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
+              </p>
+              <h3 class="education__inner-title education__team-title">
+                Наши инструкторы
+              </h3>
+              <ul class="education__team-list">
+                <li class="team-card">
+                  <div class="team-card__wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/team/team-prokofiev.webp    1x,
+                          img/team/team-prokofiev@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/team/team-prokofiev-tab.webp    1x,
+                          img/team/team-prokofiev-tab@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/team/team-prokofiev-mob.webp    1x,
+                          img/team/team-prokofiev-mob@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/team/team-prokofiev.jpg     1x,
+                          img/team/team-prokofievo@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/team/team-prokofiev-tab.jpg    1x,
+                          img/team/team-prokofiev-tab@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/team/team-prokofiev-mob.jpg    1x,
+                          img/team/team-prokofiev-mob@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="team-card__image"
+                        src="img/team/team-prokofiev.jpg"
+                        alt="фото инструктора Прокофьева."
+                        width="238"
+                        height="212"
+                        srcset="img/team/team-prokofiev@2x.jpg 2x"
+                      />
+                    </picture>
+                    <div class="team-card__name-wrapper">
+                      <h4 class="team-card__name-title">
+                        Александр<br />
+                        Прокофьев
+                      </h4>
+                      <a class="team-card__vk">
+                        <svg
+                          class="team-card__vk-icon"
+                          role="img"
+                          aria-label="vk."
+                          width="14"
+                          height="8"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 14 8"
+                        >
+                          <use href="./img/sprite.svg#vk" />
+                        </svg>
+                      </a>
+                    </div>
+                    <p class="team-card__description">
+                      Строгий и&nbsp;внимательный инструктор, веселый
+                      и&nbsp;общительный человек. Любит природу.
+                    </p>
+                  </div>
+                </li>
+                <li class="team-card">
+                  <div class="team-card__wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/team/team-afinogenova.webp    1x,
+                          img/team/team-afinogenova@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/team/team-afinogenova-tab.webp    1x,
+                          img/team/team-afinogenova-tab@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/team/team-afinogenova-mob.webp    1x,
+                          img/team/team-afinogenova-mob@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/team/team-afinogenova.jpg     1x,
+                          img/team/team-afinogenovao@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/team/team-afinogenova-tab.jpg    1x,
+                          img/team/team-afinogenova-tab@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/team/team-afinogenova-mob.jpg    1x,
+                          img/team/team-afinogenova-mob@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="team-card__image"
+                        src="img/team/team-afinogenova.jpg"
+                        alt="фото инструктора Афиногеновой."
+                        width="238"
+                        height="212"
+                        srcset="img/team/team-afinogenova@2x.jpg 2x"
+                      />
+                    </picture>
+                    <div class="team-card__name-wrapper">
+                      <h4 class="team-card__name-title">
+                        Светлана<br />
+                        Афиногенова
+                      </h4>
+                      <a class="team-card__vk">
+                        <svg
+                          class="team-card__vk-icon"
+                          role="img"
+                          aria-label="vk."
+                          width="14"
+                          height="8"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 14 8"
+                        >
+                          <use href="./img/sprite.svg#vk" />
+                        </svg>
+                      </a>
+                    </div>
+                    <p class="team-card__description">
+                      Видеть мир вокруг, познавать его опасности, находить друг
+                      друга, становиться ближе, чувствовать&nbsp;&mdash;
+                      в&nbsp;этом назначение жизни.
+                    </p>
+                  </div>
+                </li>
+                <li class="team-card">
+                  <div class="team-card__wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/team/team-kolesnichenko.webp    1x,
+                          img/team/team-kolesnichenko@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/team/team-kolesnichenko-tab.webp    1x,
+                          img/team/team-kolesnichenko-tab@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/team/team-kolesnichenko-mob.webp    1x,
+                          img/team/team-kolesnichenko-mob@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/team/team-kolesnichenko.jpg     1x,
+                          img/team/team-kolesnichenkoo@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/team/team-kolesnichenko-tab.jpg    1x,
+                          img/team/team-kolesnichenko-tab@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/team/team-kolesnichenko-mob.jpg    1x,
+                          img/team/team-kolesnichenko-mob@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="team-card__image"
+                        src="img/team/team-kolesnichenko.jpg"
+                        alt="фото инструктора Колесниченко."
+                        width="238"
+                        height="212"
+                        srcset="img/team/team-kolesnichenko@2x.jpg 2x"
+                      />
+                    </picture>
+                    <div class="team-card__name-wrapper">
+                      <h4 class="team-card__name-title">
+                        Надежда<br />
+                        Колесниченко
+                      </h4>
+                      <a class="team-card__vk">
+                        <svg
+                          class="team-card__vk-icon"
+                          role="img"
+                          aria-label="vk."
+                          width="14"
+                          height="8"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 14 8"
+                        >
+                          <use href="./img/sprite.svg#vk" />
+                        </svg>
+                      </a>
+                    </div>
+                    <p class="team-card__description">
+                      Участники говорят, что Надежда ответственная, приятная в
+                      общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя
+                      спокойно и уверенно.
+                    </p>
+                  </div>
+                </li>
+                <li class="team-card">
+                  <div class="team-card__wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/team/team-kaigorodov.webp    1x,
+                          img/team/team-kaigorodov@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/team/team-kaigorodov-tab.webp    1x,
+                          img/team/team-kaigorodov-tab@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/team/team-kaigorodov-mob.webp    1x,
+                          img/team/team-kaigorodov-mob@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/team/team-kaigorodov.jpg     1x,
+                          img/team/team-kaigorodovo@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/team/team-kaigorodov-tab.jpg    1x,
+                          img/team/team-kaigorodov-tab@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/team/team-kaigorodov-mob.jpg    1x,
+                          img/team/team-kaigorodov-mob@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="team-card__image"
+                        src="img/team/team-kaigorodov.jpg"
+                        alt="фото инструктора Кайгородова."
+                        width="238"
+                        height="212"
+                        srcset="img/team/team-kaigorodov@2x.jpg 2x"
+                      />
+                    </picture>
+                    <div class="team-card__name-wrapper">
+                      <h4 class="team-card__name-title">
+                        Федор<br />
+                        Кайгородов
+                      </h4>
+                      <a class="team-card__vk">
+                        <svg
+                          class="team-card__vk-icon"
+                          role="img"
+                          aria-label="vk."
+                          width="14"
+                          height="8"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 14 8"
+                        >
+                          <use href="./img/sprite.svg#vk" />
+                        </svg>
+                      </a>
+                    </div>
+                    <p class="team-card__description">
+                      Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года.
+                      В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз,
+                      много путешествует по Европе.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <h3 class="education__inner-title education__process-title">
+                Процесс обучения
+              </h3>
+              <ul class="education__process-list">
+                <li class="education__process-item">
+                  <svg
+                    class="education__process-item-icon"
+                    role="img"
+                    aria-label="map."
+                    width="25"
+                    height="25"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                  >
+                    <use href="./img/sprite.svg#map" />
+                  </svg>
+                  <span class="education__process-item-description">
+                    Изучение спортивного туристского движения
+                  </span>
+                </li>
+                <li class="education__process-item">
+                  <svg
+                    class="education__process-item-icon"
+                    role="img"
+                    aria-label="boots."
+                    width="24"
+                    height="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                  >
+                    <use href="./img/sprite.svg#boots" />
+                  </svg>
+                  <span class="education__process-item-description">
+                    Подготовка и&nbsp;техническое снаряжение в&nbsp;походах
+                  </span>
+                </li>
+                <li class="education__process-item">
+                  <svg
+                    class="education__process-item-icon"
+                    role="img"
+                    aria-label="pine-tree."
+                    width="23"
+                    height="23"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 23 23"
+                  >
+                    <use href="./img/sprite.svg#pine-tree" />
+                  </svg>
+                  <span class="education__process-item-description">
+                    Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене
+                  </span>
+                </li>
+                <li class="education__process-item">
+                  <svg
+                    class="education__process-item-icon"
+                    role="img"
+                    aria-label="mountain."
+                    width="25"
+                    height="25"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                  >
+                    <use href="./img/sprite.svg#mountain" />
+                  </svg>
+                  <span class="education__process-item-description">
+                    Разъяснение сложности горных препятствий
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__container container">
+            <div class="about__wrapper wrapper">
+              <div class="about__img-wrapper">
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="img/about.webp 1x, img/about@2x.webp 2x"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="img/about-tab.webp 1x, img/about-tab@2x.webp 2x"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/about-mob.webp 1x, img/about-mob@2x.webp 2x"
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1200px)"
+                    srcset="img/about.jpg 1x, img/abouto@2x.jpg 2x"
+                  />
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="img/about-tab.jpg 1x, img/about-tab@2x.jpg 2x"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/about-mob.jpg 1x, img/about-mob@2x.jpg 2x"
+                  />
+                  <img
+                    class="team-card__image"
+                    src="img/about.jpg"
+                    alt="фото инструктора Кайгородова."
+                    width="238"
+                    height="212"
+                    srcset="img/about@2x.jpg 2x"
+                  />
+                </picture>
+              </div>
+              <div class="about__description-wrapper">
+                <h2 class="about__title section-title">О нас</h2>
+                <ul class="about__list">
+                  <li class="about__item">
+                    <h3 class="about__item-title">История компании</h3>
+                    <p class="about__item-description">
+                      В&nbsp;далеком 2000 году мы&nbsp;начали заниматься
+                      туризмом &mdash; походы, поездки, восхождения, нам это
+                      настолько понравилось, что мы&nbsp;этим стали жить. Спустя
+                      5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию,
+                      чтобы показывать людям удивительные места нашей страны.
+                    </p>
+                  </li>
+                  <li class="about__item">
+                    <h3 class="Наша цель">Наша цель</h3>
+                    <p class="about__item-description">
+                      Подарить вам незабываемые впечатления от&nbsp;похода
+                      в&nbsp;горы. Мы берем на&nbsp;себя все организационные
+                      вопросы. При организации мы&nbsp;обязательно учтем все
+                      ваши пожелания. Вам останется только наслаждаться
+                      незабываемым приключением в&nbsp;приятной компании.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="review">
+          <div class="review__container container">
+            <div class="review__wrapper wrapper">
+              <h2 class="review__title section-title">Отзывы</h2>
+              <ul class="review__list">
+                <li class="review__item">
+                  <div class="review__item-img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/review/review-frolov.webp    1x,
+                          img/review/review-frolov@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/review/review-frolov-tab.webp    1x,
+                          img/review/review-frolov-tab@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/review/review-frolov-mob.webp    1x,
+                          img/review/review-frolov-mob@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/review/review-frolov.jpg     1x,
+                          img/review/review-frolovo@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/review/review-frolov-tab.jpg    1x,
+                          img/review/review-frolov-tab@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/review/review-frolov-mob.jpg    1x,
+                          img/review/review-frolov-mob@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="review__item-img"
+                        src="img/review/review-frolov.jpg"
+                        alt="фото туриста Фролова."
+                        width="258"
+                        height="253"
+                        srcset="img/review/review-frolov@2x.jpg 2x"
+                      />
+                    </picture>
+                  </div>
+                  <div class="review__item-description-wrapper">
+                    <p class="review__item-description">
+                      Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями.
+                      Впечатления потрясающие! Инструкторы&nbsp;&mdash;
+                      настоящие эксперты&nbsp;&mdash; всему научили, все
+                      показали. Делились увлекательными историями о местах,
+                      людях, культуре места.
+                    </p>
+                    <p class="review__item-description">
+                      С&nbsp;уверенностью могу сказать, что жизнь разделилась
+                      на&nbsp;до этого и&nbsp;после. Еще никогда не&nbsp;отдыхал
+                      так душой и&nbsp;телом. Всем очень рекомендую!
+                    </p>
+                    <h3 class="review__item-person-title">Фролов Александр</h3>
+                    <span class="review__item-person-description"
+                      >38 лет, Москва</span
+                    >
+                  </div>
+                </li>
+                <li class="review__item">
+                  <div class="review__item-img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/review/review-soloviev.webp    1x,
+                          img/review/review-soloviev@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/review/review-soloviev-tab.webp    1x,
+                          img/review/review-soloviev-tab@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/review/review-soloviev-mob.webp    1x,
+                          img/review/review-soloviev-mob@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/review/review-soloviev.jpg     1x,
+                          img/review/review-solovievo@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/review/review-soloviev-tab.jpg    1x,
+                          img/review/review-soloviev-tab@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/review/review-soloviev-mob.jpg    1x,
+                          img/review/review-soloviev-mob@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="review__item-img"
+                        src="img/review/review-soloviev.jpg"
+                        alt="фото туриста Соловьева."
+                        width="258"
+                        height="253"
+                        srcset="img/review/review-soloviev@2x.jpg 2x"
+                      />
+                    </picture>
+                  </div>
+                  <div class="review__item-description-wrapper">
+                    <p class="review__item-description">
+                      Хороший полноценный поход с&nbsp;разнообразными локациями.
+                      В начале дорога идет по&nbsp;лыжне, далее прошли мимо
+                      полигона, по&nbsp;болотам, у&nbsp;озер и&nbsp;лесных
+                      ручьев, остатков дач конца 19 века. Было очень интересно!
+                    </p>
+                    <p class="review__item-description">
+                      Инструктор Федор дружелюбный, внимательный к&nbsp;технике
+                      безопасности и&nbsp;своим туристам. Всем советую этот тур.
+                    </p>
+                    <h3 class="review__item-person-title">Иван Соловьев</h3>
+                    <span class="review__item-person-description"
+                      >25 лет, Владивосток</span
+                    >
+                  </div>
+                </li>
+                <li class="review__item">
+                  <div class="review__item-img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/review/review-bajenova.webp    1x,
+                          img/review/review-bajenova@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/review/review-bajenova-tab.webp    1x,
+                          img/review/review-bajenova-tab@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/review/review-bajenova-mob.webp    1x,
+                          img/review/review-bajenova-mob@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/review/review-bajenova.jpg     1x,
+                          img/review/review-bajenovao@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/review/review-bajenova-tab.jpg    1x,
+                          img/review/review-bajenova-tab@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/review/review-bajenova-mob.jpg    1x,
+                          img/review/review-bajenova-mob@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="review__item-img"
+                        src="img/review/review-bajenova.jpg"
+                        alt="фото туристки Баженовой."
+                        width="258"
+                        height="253"
+                        srcset="img/review/review-bajenova@2x.jpg 2x"
+                      />
+                    </picture>
+                  </div>
+                  <div class="review__item-description-wrapper">
+                    <p class="review__item-description">
+                      Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции.
+                      В&nbsp;первый день прошли около 30&nbsp;км, физически
+                      я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была
+                      уверена, пройду&nbsp;ли до&nbsp;конца.
+                      Но&nbsp;я&nbsp;справилась. Второй день прошел легче, чем
+                      ожидала, видимо организм уже привык.
+                    </p>
+                    <p class="review__item-description">
+                      Спасибо ребятам, инструкторам за&nbsp;помощь
+                      и&nbsp;поддержку!  Я была рада быть в&nbsp;такой компании.
+                    </p>
+                    <h3 class="review__item-person-title">Евгения Баженова</h3>
+                    <span class="review__item-person-description"
+                      >23 года, Кострома</span
+                    >
+                  </div>
+                </li>
+                <li class="review__item">
+                  <div class="review__item-img-wrapper">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/review/review-pirogova.webp    1x,
+                          img/review/review-pirogova@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/review/review-pirogova-tab.webp    1x,
+                          img/review/review-pirogova-tab@2x.webp 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/review/review-pirogova-mob.webp    1x,
+                          img/review/review-pirogova-mob@2x.webp 2x
+                        "
+                      />
+                      <source
+                        type="image/webp"
+                        media="(min-width: 1200px)"
+                        srcset="
+                          img/review/review-pirogova.jpg     1x,
+                          img/review/review-pirogovao@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="
+                          img/review/review-pirogova-tab.jpg    1x,
+                          img/review/review-pirogova-tab@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767px)"
+                        srcset="
+                          img/review/review-pirogova-mob.jpg    1x,
+                          img/review/review-pirogova-mob@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        class="review__item-img"
+                        src="img/review/review-pirogova.jpg"
+                        alt="фото туристки Пироговой."
+                        width="258"
+                        height="253"
+                        srcset="img/review/review-pirogova@2x.jpg 2x"
+                      />
+                    </picture>
+                  </div>
+                  <div class="review__item-description-wrapper">
+                    <p class="review__item-description">
+                      Это был опыт, изменивший мою жизнь! Думала,
+                      не&nbsp;справлюсь, но&nbsp;все получилось! Дух
+                      захватывает, когда наконец-то, преодолев все трудности
+                      и&nbsp;препятствия, взбираешься на вершину.
+                    </p>
+                    <p class="review__item-description">
+                      У&nbsp;нас собралась потрясающая команда. Все друг друга
+                      поддерживали, по&nbsp;вечерам мы&nbsp;сидели вместе
+                      у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое
+                      приключение!
+                    </p>
+                    <h3 class="review__item-person-title">Елена Пирогова</h3>
+                    <span class="review__item-person-description"
+                      >37 лет, Тюмень</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="benefits">
+          <div class="benefits__container container">
+            <div class="benefits__wrapper wrapper">
+              <h2 class="benefits__title section-title">Преимущества</h2>
+              <ul class="benefits__list">
+                <li class="benefits__item">
+                  <div class="benefits__item-wrapper">
+                    <div class="benefits__item-icon-wrapper">
+                      <svg
+                        class="benefits__item-icon"
+                        role="img"
+                        aria-label="safe."
+                        width="22"
+                        height="22"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 22 22"
+                      >
+                        <use href="./img/sprite.svg#safe" />
+                      </svg>
+                    </div>
+                    <h3 class="benefits__item-title">Безопасность и охрана</h3>
+                    <p class="benefits__item-description">
+                      Уделяем внимание безопасности клиентов, внедряя строгие
+                      процедуры и&nbsp;протоколы безопасности. Имеем планы
+                      действий на&nbsp;случай непредвиденных обстоятельств
+                      и&nbsp;даем гарантию полной безопасности во&nbsp;время
+                      всего тура.
+                    </p>
+                  </div>
+                </li>
+                <li class="benefits__item">
+                  <div class="benefits__item-wrapper">
+                    <div class="benefits__item-icon-wrapper">
+                      <svg
+                        class="benefits__item-icon"
+                        role="img"
+                        aria-label="crown."
+                        width="22"
+                        height="22"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 22 22"
+                      >
+                        <use href="./img/sprite.svg#crown" />
+                      </svg>
+                    </div>
+                    <h3 class="benefits__item-title">Экспертиза и знания</h3>
+                    <p class="benefits__item-description">
+                      Наша команда опытных гидов имеет обширные знания о
+                      местности, погодных условиях и&nbsp;технике безопасности.
+                      Это гарантирует, что наши клиенты находятся
+                      в&nbsp;надежных руках и могут в&nbsp;полной мере
+                      насладиться опытом без опасений.
+                    </p>
+                  </div>
+                </li>
+                <li class="benefits__item">
+                  <div class="benefits__item-wrapper">
+                    <div class="benefits__item-icon-wrapper">
+                      <svg
+                        class="benefits__item-icon"
+                        role="img"
+                        aria-label="boots."
+                        width="22"
+                        height="22"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 22 22"
+                      >
+                        <use href="./img/sprite.svg#boots" />
+                      </svg>
+                    </div>
+                    <h3 class="benefits__item-title">
+                      Оборудование и снаряжение
+                    </h3>
+                    <p class="benefits__item-description">
+                      Мы&nbsp;предоставляем клиентам все необходимое
+                      оборудование, необходимое для путешествия. Это избавляет
+                      клиентов от необходимости покупать, брать с&nbsp;собой
+                      снаряжение, что делает путешествие более удобным
+                      и&nbsp;экономически выгодным.
+                    </p>
+                  </div>
+                </li>
+                <li class="benefits__item">
+                  <div class="benefits__item-wrapper">
+                    <div class="benefits__item-icon-wrapper">
+                      <svg
+                        class="benefits__item-icon"
+                        role="img"
+                        aria-label="path."
+                        width="22"
+                        height="22"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 22 22"
+                      >
+                        <use href="./img/sprite.svg#path" />
+                      </svg>
+                    </div>
+                    <h3 class="benefits__item-title">
+                      Индивидуальные маршруты
+                    </h3>
+                    <p class="benefits__item-description">
+                      Предлагает широкий выбор туров, отвечающих различным
+                      уровням мастерства и&nbsp;интересам. Мы&nbsp;также можем
+                      адаптировать маршруты к&nbsp;вашим конкретным потребностям
+                      и предпочтениям, чтобы вы&nbsp;получили индивидуальный
+                      опыт.
+                    </p>
+                  </div>
+                </li>
+                <li class="benefits__item">
+                  <div class="benefits__item-wrapper">
+                    <div class="benefits__item-icon-wrapper">
+                      <svg
+                        class="benefits__item-icon"
+                        role="img"
+                        aria-label="leaf."
+                        width="22"
+                        height="22"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 22 22"
+                      >
+                        <use href="./img/sprite.svg#leaf" />
+                      </svg>
+                    </div>
+                    <h3 class="benefits__item-title">
+                      Бережное отношение к природе
+                    </h3>
+                    <p class="benefits__item-description">
+                      Уделяем первостепенное внимание охране окружающей среды и
+                      гарантируем, что туры оказывают минимальное воздействие на
+                      природную среду. Наша компания следует принципу &laquo;Не
+                      оставлять следов&raquo;.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <div class="gallery__container container">
+            <div class="gallery__wrapper wrapper">
+              <h2 class="gallery__title section-title">Фотогалерея</h2>
+              <p class="gallery__description">
+                Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур,
+                а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии
+                украсят этот раздел нашего сайта.
+              </p>
+              <ul class="gallery__list">
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img"
+                      src="img/gallery/gallery1.jpg"
+                      alt="фото из похода."
+                      width="275"
+                      height="449"
+                      srcset="img/gallery/gallery1@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img-top"
+                      src="img/gallery/gallery2.jpg"
+                      alt="фото из похода."
+                      width="298"
+                      height="179"
+                      srcset="img/gallery/gallery2@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img-bottom"
+                      src="img/gallery/gallery3.jpg"
+                      alt="фото из похода."
+                      width="298"
+                      height="265"
+                      srcset="img/gallery/gallery3@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img"
+                      src="img/gallery/gallery4.jpg"
+                      alt="фото из похода."
+                      width="275"
+                      height="449"
+                      srcset="img/gallery/gallery4@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img-top"
+                      src="img/gallery/gallery5.jpg"
+                      alt="фото из похода."
+                      width="298"
+                      height="179"
+                      srcset="img/gallery/gallery5@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img-bottom"
+                      src="img/gallery/gallery6.jpg"
+                      alt="фото из похода."
+                      width="298"
+                      height="265"
+                      srcset="img/gallery/gallery6@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+                <li class="gallery__item">
+                  <div class="gallery__item-wrapper">
+                    <img
+                      class="gallery__item-img"
+                      src="img/gallery/gallery7.jpg"
+                      alt="фото из похода."
+                      width="275"
+                      height="449"
+                      srcset="img/gallery/gallery7@2x.jpg 2x"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="form">
+          <div class="form__container container">
+            <div class="form__wrapper wrapper">
+              <h2 class="form__title section-title">Остались вопросы?</h2>
+              <p class="form__description">
+                Заполните форму и наш оператор свяжется с вами для консультации.
+              </p>
+              <div data-callback="base" data-form-validate>
+                <form
+                  class="form__form"
+                  action="https://echo.htmlacademy.ru/"
+                  method="post"
+                >
+                  <div class="form__form-input-container">
+                    <label
+                      for="user-name"
+                      data-validate-type="text"
+                      data-limitation="letters"
+                      data-message-base="Пустое поле"
+                      data-message-extra="Ошибка"
+                      data-required
+                    >
+                      <input
+                        type="text"
+                        name="user-name"
+                        id="user-name"
+                        placeholder="Как к вам обращаться?"
+                        required
+                      />
+                      <span></span>
+                    </label>
+                    <label
+                      for="user-tel-number"
+                      data-matrix-limitation="digit"
+                      data-message-base="Пустое поле"
+                      data-message-extra="Ошибка"
+                      data-validate-type="phone"
+                      data-required
+                    >
+                      <input
+                        type="tel"
+                        name="user-tel-number"
+                        id="user-tel-number"
+                        placeholder="Телефон"
+                        required
+                      />
+                      <span></span>
+                    </label>
+                  </div>
+                  <button
+                    class="form__form-button button-dark-background"
+                    type="submit"
+                  >
+                    отправить
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container container">
+            <div class="contacts__wrapper wrapper">
+              <h2 class="contacts__title section-title">Контакты</h2>
+              <p class="contacts__description">
+                Свяжитесь с нами любым удобным для вас способом или приходите к
+                нам в гости. Мы будем рады поделиться увлекательными историями и
+                подобрать для вас тур.
+              </p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <svg
+                    class="contacts__item-icon"
+                    role="img"
+                    aria-label="phone."
+                    width="26"
+                    height="26"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26"
+                  >
+                    <use href="./img/sprite.svg#phone" />
+                  </svg>
+                  <div class="contacts__item-description-wrapper">
+                    <h3 class="contacts__item-title">Телефон</h3>
+                    <p class="contacts__item-description">
+                      <a class="contacts__item-link" href="tel:89837454545">
+                        8 983 745 45 45
+                      </a>
+                    </p>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <svg
+                    class="contacts__item-icon"
+                    role="img"
+                    aria-label="mail."
+                    width="26"
+                    height="26"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26"
+                  >
+                    <use href="./img/sprite.svg#mail" />
+                  </svg>
+                  <div class="contacts__item-description-wrapper">
+                    <h3 class="contacts__item-title">E-mail</h3>
+                    <p class="contacts__item-description">
+                      <a
+                        class="contacts__item-link"
+                        href="mailto:info@lifetour.com"
+                      >
+                        info@lifetour.com
+                      </a>
+                    </p>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <svg
+                    class="contacts__item-icon"
+                    role="img"
+                    aria-label="mail."
+                    width="26"
+                    height="26"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26"
+                  >
+                    <use href="./img/sprite.svg#mail" />
+                  </svg>
+                  <div class="contacts__item-description-wrapper">
+                    <h3 class="contacts__item-title">Адрес</h3>
+                    <p class="contacts__item-description">
+                      г. Москва, пр-т Мира, д. 14, офис 101
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div class="contacts__map-wrapper"></div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__wrapper wrapper">
+            <div class="footer__top-wrapper">
+              <a class="footer__logo" href="#">
+                <img
+                  class="footer__logo-icon"
+                  src="img/svg/logo-lifetour.svg"
+                  width="122"
+                  height="44"
+                  alt="Supergym."
+                />
+              </a>
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-item">Туры</li>
+                  <li class="footer__menu-item">Обучение</li>
+                  <li class="footer__menu-item">О нас</li>
+                  <li class="footer__menu-item">Отзывы</li>
+                  <li class="footer__menu-item">Фотографии</li>
+                  <li class="footer__menu-item">Контакты</li>
+                </ul>
+              </nav>
+              <a class="footer__tel" href="tel:88005555555">8 800 725 32 32</a>
+            </div>
+          </div>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <div class="footer__social-item-wrapper">
+                <svg
+                  class="footer__item-icon"
+                  role="img"
+                  aria-label="vk."
+                  width="16"
+                  height="9"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 9"
+                >
+                  <use href="./img/sprite.svg#vk" />
+                </svg>
+              </div>
+            </li>
+            <li class="footer__social-item">
+              <div class="footer__social-item-wrapper">
+                <svg
+                  class="footer__item-icon"
+                  role="img"
+                  aria-label="ok."
+                  width="9"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 9 16"
+                >
+                  <use href="./img/sprite.svg#ok" />
+                </svg>
+              </div>
+            </li>
+            <li class="footer__social-item">
+              <div class="footer__social-item-wrapper">
+                <svg
+                  class="footer__item-icon"
+                  role="img"
+                  aria-label="reddit."
+                  width="14"
+                  height="15"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 14 15"
+                >
+                  <use href="./img/sprite.svg#reddit" />
+                </svg>
+              </div>
+            </li>
+          </ul>
+          <p class="footer__policy"></p>
+        </div>
       </footer>
     </div>
 
