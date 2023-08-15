@@ -1,0 +1,82 @@
+.education__container {
+  padding-top: 121px;
+  background-color: $color-light;
+}
+
+.education__wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.education__title {
+  margin-bottom: 38px;
+}
+
+.education__description {
+  width: 820px;
+  color: $color-dark;
+  font-family: $font-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 52px;
+}
+
+.education__inner-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 44px;
+  color: $color-dark;
+  font-family: $font-bold;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.education__team-list {
+  margin: 0;
+  margin-bottom: 49px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.team-card {
+  margin-right: 30px;
+  min-width: 278px;
+  max-width: 278px;
+  background-color: $color-light;
+  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-card__wrapper {
+  padding: 20px;
+}
+
+.team-card__name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.team-card__name-title {
+  margin: 0;
+  padding: 0;
+  color: $color-dark;
+  font-family: $font-bold;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.team-card__vk {
+  box-shadow: 0px 0px 30px 0px rgba(45, 56, 63, 0.1);
+}
