@@ -74,6 +74,16 @@
   }
 }
 
+@mixin tour-line {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: calc(100% + 25px);
+  background-color: rgba(2, 102, 193, 0.1);
+  top: 50%;
+  left: 6.5px;
+}
+
 // Mobile first
 
 // @mixin vp-375 {
