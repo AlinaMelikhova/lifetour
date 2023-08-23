@@ -1,7 +1,5 @@
 .tour-card__wrapper {
-  min-width: 380px;
-  max-width: 380px;
-  padding: 206px 20px 28px;
+  padding: 206px 20px 26px;
   background-color: $color-dark;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +130,8 @@
 
   &--place {
     background-color: $color-bright;
-    padding: 9px 25px;
+    padding: 9px 25px 8px;
+    min-width: 108px;
 
     @include vp-1200 {
       padding: 9px 15px;
@@ -147,6 +146,14 @@
     & svg {
       margin-right: 6px;
     }
+  }
+
+  &--days {
+    min-width: 76px;
+  }
+
+  &--nights {
+    min-width: 82px;
   }
 }
 
@@ -185,6 +192,7 @@
   margin: 0;
   padding: 0;
   padding-top: 20px;
+  padding-right: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -213,7 +221,7 @@
   & p {
     margin: 0;
     padding: 0;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     color: $color-light;
     font-family: $font-light;
     font-size: 12px;

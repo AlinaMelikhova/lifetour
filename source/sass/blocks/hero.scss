@@ -6,32 +6,90 @@
   min-height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/hero/hero1.jpg");
   box-sizing: border-box;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero/hero1@2x.jpg");
-  }
+  display: flex;
 
   @include vp-1200 {
     padding-top: 174px;
     padding-bottom: 218px;
     min-height: 1024px;
-    background-image: url("../img/hero/hero1-tab.jpg");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero1-tab@2x.jpg");
-    }
   }
 
   @include vp-767 {
     padding-top: 139px;
     padding-bottom: 172px;
     min-height: 568px;
-    background-image: url("../img/hero/hero1-mob.jpg");
+  }
+
+  &--caucasus {
+    background-image: url("../img/hero/hero1.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero/hero1-mob@2x.jpg");
+      background-image: url("../img/hero/hero1@2x.jpg");
+    }
+
+    @include vp-1200 {
+      background-image: url("../img/hero/hero1-tab.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero1-tab@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/hero/hero1-mob.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero1-mob@2x.jpg");
+      }
+    }
+  }
+
+  &--kamchatka {
+    background-image: url("../img/hero/hero2.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero2@2x.jpg");
+    }
+
+    @include vp-1200 {
+      background-image: url("../img/hero/hero2-tab.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero2-tab@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/hero/hero2-mob.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero2-mob@2x.jpg");
+      }
+    }
+  }
+
+  &--altay {
+    background-image: url("../img/hero/hero3.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero3@2x.jpg");
+    }
+
+    @include vp-1200 {
+      background-image: url("../img/hero/hero3-tab.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero3-tab@2x.jpg");
+      }
+    }
+
+    @include vp-767 {
+      background-image: url("../img/hero/hero3-mob.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero3-mob@2x.jpg");
+      }
     }
   }
 
@@ -66,6 +124,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-grow: 1;
 
   @include vp-1200 {
     align-items: center;
@@ -77,7 +136,7 @@
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  max-width: 780px;
+  max-width: 945px;
   font-family: $font-extra-bold;
   font-size: 77px;
   font-style: normal;
@@ -100,7 +159,7 @@
 }
 
 .hero__description {
-  max-width: 430px;
+  max-width: 460px;
   color: $color-light;
   margin: 0;
   margin-bottom: 35px;
@@ -127,7 +186,7 @@
 .hero__list {
   max-width: 780px;
   margin: 0;
-  margin-top: 150px;
+  margin-top: auto;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -140,7 +199,7 @@
 
 .hero__item {
   margin-right: 10px;
-  padding: 14px 20px;
+  padding: 13px 19px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
@@ -160,10 +219,46 @@
   color: $color-light;
 }
 
+.hero__button {
+  padding: 21px 54px;
+}
+
+.hero__pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.hero__pagination-item {
+  margin-right: 15px;
+  width: 10px;
+  height: 10px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.hero__pagination-button {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid $color-light;
+  background-color: $color-transparent;
+
+  &--current {
+    background-color: $color-light;
+  }
+}
+
 .hero__video-container {
   position: absolute;
   right: 120px;
-  bottom: 123px;
+  bottom: 102px;
 
   @include vp-1200 {
     position: relative;
@@ -190,6 +285,7 @@
 .hero__youtube-video {
   width: 482px;
   height: 317px;
+  border: none;
 
   @include vp-1200 {
     width: 442px;
@@ -240,5 +336,49 @@
 
   &:disabled path {
     fill: #0266c11a;
+  }
+}
+
+.hero__polaroid-container {
+  position: absolute;
+  bottom: 59px;
+  right: 120px;
+
+  @include vp-1200 {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 50px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.hero__polaroid-image {
+  width: 410px;
+  height: 459px;
+
+  @include vp-1200 {
+    width: 442px;
+    height: 365px;
+  }
+}
+
+.hero__podcast-container {
+  position: absolute;
+  bottom: 199px;
+  right: 120px;
+
+  @include vp-1200 {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin-top: 50px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }

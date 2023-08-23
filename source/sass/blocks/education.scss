@@ -1,6 +1,6 @@
 .education__container {
-  padding-top: 121px;
-  padding-bottom: 32px;
+  padding-top: 125px;
+  padding-bottom: 36px;
   background-color: $color-light;
   position: relative;
 
@@ -32,10 +32,11 @@
 .education__wrapper {
   position: relative;
   z-index: 2;
+  padding: 0 120px;
 }
 
 .education__title {
-  margin-bottom: 38px;
+  margin-bottom: 32px;
 
   @include vp-1200 {
     margin-bottom: 26px;
@@ -47,6 +48,9 @@
 }
 
 .education__description {
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0;
   width: 820px;
   color: $color-dark;
   font-family: $font-regular;
@@ -54,7 +58,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 52px;
 
   @include vp-1200 {
     width: 560px;
@@ -72,7 +75,7 @@
 .education__inner-title {
   margin: 0;
   padding: 0;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
   color: $color-dark;
   font-family: $font-bold;
   font-size: 21px;
@@ -84,12 +87,16 @@
     margin-bottom: 34px;
     font-size: 18px;
   }
+
+  &--process {
+    margin-bottom: 41px;
+  }
 }
 
 .education__team-list {
   margin: 0;
   padding: 0;
-  margin-bottom: 49px;
+  margin-bottom: 50px;
   list-style-type: none;
   display: flex;
 
@@ -136,7 +143,7 @@
     height: 14px;
     border-radius: 50%;
     background-color: $color-bright;
-    bottom: -21px;
+    bottom: -42px;
     left: 0;
   }
 

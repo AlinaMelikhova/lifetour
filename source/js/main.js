@@ -3,8 +3,10 @@ import { initModals } from "./modules/modals/init-modals";
 import { Form } from "./modules/form-validate/form";
 import { handleMobileMenu } from "./modules/mobile-menu";
 import { playVideo } from "./modules/youtube";
+import { initSwipers } from "./modules/swipers";
+import "./modules/leaflet";
 
-// ---------------------------------
+// // ---------------------------------
 
 window.addEventListener("DOMContentLoaded", () => {
   // Utils
@@ -15,6 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
   // Modules
   handleMobileMenu();
   playVideo();
+  initSwipers();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

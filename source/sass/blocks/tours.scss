@@ -1,5 +1,5 @@
 .tours__container {
-  padding-top: 119px;
+  padding-top: 123px;
   background-color: $color-light;
   position: relative;
   z-index: 2;
@@ -21,7 +21,7 @@
 }
 
 .tours__title {
-  margin-bottom: 58px;
+  margin-bottom: 54px;
 
   @include vp-1200 {
     margin-bottom: 46px;
@@ -39,7 +39,6 @@
   list-style-type: none;
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: hidden;
 
   @include vp-1200 {
     margin-bottom: 50px;
@@ -51,16 +50,7 @@
 }
 
 .tours__item {
-  margin-right: 30px;
   flex-grow: 1;
-
-  @include vp-1200 {
-    margin-right: 18px;
-  }
-
-  @include vp-767 {
-    margin-right: 30px;
-  }
 
   &:last-child {
     margin-right: 0;
@@ -111,7 +101,7 @@
   letter-spacing: 0.64px;
   text-transform: uppercase;
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 10px;
   cursor: pointer;
 
   @include vp-767 {
@@ -131,7 +121,7 @@
 .tours__image {
   position: absolute;
   right: 0;
-  top: 0;
+  top: -18px;
   z-index: 0;
 
   @include vp-1200 {

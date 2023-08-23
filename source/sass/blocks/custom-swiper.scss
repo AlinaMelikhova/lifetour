@@ -1,0 +1,118 @@
+.swiper {
+  width: 100%;
+  position: relative;
+
+  &-tours {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.swiper-slide.swiper-slide--review {
+  width: 790px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 97px;
+  right: 120px;
+  z-index: 100;
+  display: flex;
+}
+
+.swiper-pagination-bullet {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid $color-light;
+  background-color: $color-transparent;
+  background-color: $color-light;
+  z-index: 100;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &-active {
+    opacity: 0.6;
+  }
+}
+
+.swiper-button-wrapper {
+  position: absolute;
+  display: flex;
+
+  &--tours {
+    top: 0;
+    right: 0;
+  }
+
+  &--education {
+    top: 164px;
+    right: 122px;
+  }
+
+  &--review {
+    top: 0;
+    right: 120px;
+  }
+
+  &--benefits {
+    bottom: 0px;
+    right: calc(50% - 39px);
+  }
+
+  &--gallery {
+    top: 66px;
+    right: 120px;
+  }
+}
+
+.swiper-button {
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 14px 8px;
+  background-position: center;
+  background-image: url("../img/svg/left.svg");
+  margin-right: 4px;
+
+  &:hover,
+  &:focus-visible,
+  &:focus-within {
+    box-shadow: inset 0 0 0 1px #1c3374;
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  &:hover,
+  &:focus-visible,
+  &:focus-within {
+    background-image: url("../img/svg/left-dark.svg");
+  }
+
+  &:active {
+    background-color: #1c3374;
+    box-shadow: inset 0 0 0 1px #1c3374;
+    background-image: url("../img/svg/left.svg");
+  }
+
+  &:active .swiper-button-prev:after {
+    background-image: url("../img/svg/left.svg");
+  }
+
+  &-next {
+    transform: rotate(180deg);
+  }
+
+  &:last-child {
+    margin: 0;
+  }
+}

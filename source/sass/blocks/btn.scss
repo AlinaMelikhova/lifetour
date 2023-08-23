@@ -1,32 +1,4 @@
-// .btn {
-//   display: inline-flex;
-//   padding: 10px 20px;
-
-//   color: $color-default-white;
-
-//   background-color: $color-neon-blue;
-//   border: none;
-//   cursor: pointer;
-
-//   transition: opacity $trans-default;
-
-//   &--red {
-//     background-color: $color-torch-red;
-//   }
-
-//   &:disabled {
-//     opacity: 0.5;
-
-//     pointer-events: none;
-//   }
-
-//   @include hover-focus {
-//     opacity: 0.8;
-//   }
-// }
-
 .button-dark-background {
-  padding: 21px 54px;
   color: $color-light;
   background-color: $color-bright;
   border: none;
@@ -41,5 +13,29 @@
 
   @include vp-767 {
     padding: 21px 34px;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    outline: none;
+    background-color: $color-light;
+    box-shadow: inset 0 0 0 1px #1c3374;
+    color: #1c3374;
+  }
+
+  &:active:not(:disabled) {
+    outline: none;
+    background-color: #1c3374;
+    color: $color-light;
+  }
+
+  &:disabled {
+    cursor: auto;
+    background-color: $color-light;
+    background-image: linear-gradient(
+      90deg,
+      rgba(2, 102, 193, 0.1) 0%,
+      rgba(2, 102, 193, 0.1) 100%
+    );
   }
 }
