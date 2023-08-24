@@ -29,7 +29,7 @@
   list-style: none;
   padding: 0;
   /* Fix of Webkit flickering */
-  z-index: 1;
+  z-index: 5;
 }
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;
@@ -246,6 +246,16 @@
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
+
+  @media (max-width: (1200px - 1px)) {
+    bottom: 90px;
+    right: calc(50% - 36px);
+  }
+
+  @media (max-width: (768 - 1px)) {
+    bottom: 40px;
+    right: calc(50% - 30px);
+  }
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
@@ -289,6 +299,11 @@
   background-color: rgba(255, 255, 255, 0);
   z-index: 100;
   position: relative;
+
+  @media (max-width: (768 - 1px)) {
+    width: 8px;
+    height: 8px;
+  }
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -348,6 +363,10 @@ button.swiper-pagination-bullet {
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 7px);
+
+  @media (max-width: (768 - 1px)) {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
+  }
 }
 .swiper-horizontal
   > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,

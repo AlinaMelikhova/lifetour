@@ -2,6 +2,10 @@
   width: 100%;
   position: relative;
 
+  &-hero {
+    z-index: 5;
+  }
+
   &-tours {
     display: flex;
     flex-direction: column;
@@ -10,6 +14,14 @@
 
 .swiper-slide.swiper-slide--review {
   width: 790px;
+
+  @include vp-1200 {
+    width: 560px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .swiper-pagination {
@@ -51,26 +63,57 @@
   &--tours {
     top: 0;
     right: 0;
+
+    @include vp-767 {
+      top: 8px;
+    }
   }
 
   &--education {
-    top: 164px;
-    right: 122px;
+    top: 175px;
+    right: 120px;
+
+    @include vp-1200 {
+      right: 45px;
+    }
+
+    @include vp-767 {
+      top: 197px;
+      right: 15px;
+    }
   }
 
   &--review {
     top: 0;
     right: 120px;
+
+    @include vp-1200 {
+      top: 3px;
+      right: 45px;
+    }
+
+    @include vp-767 {
+      right: 0;
+    }
   }
 
   &--benefits {
     bottom: 0px;
     right: calc(50% - 39px);
+
+    @include vp-1200 {
+      display: none;
+    }
   }
 
   &--gallery {
     top: 66px;
     right: 120px;
+
+    @include vp-1200 {
+      top: 62px;
+      right: 45px;
+    }
   }
 }
 

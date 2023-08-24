@@ -6,13 +6,21 @@
   }
 
   @include vp-767 {
-    padding-top: 60px;
+    padding-top: 57px;
   }
 }
 
 .review__wrapper {
   padding: 0 0 0 120px;
   position: relative;
+
+  @include vp-1200 {
+    padding: 0 0 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
 }
 
 .review__title {
@@ -20,11 +28,13 @@
   margin-top: 14px;
 
   @include vp-1200 {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
+    margin-top: 19px;
   }
 
   @include vp-767 {
-    margin-bottom: 32px;
+    margin-top: 13px;
+    margin-bottom: 33px;
   }
 }
 
@@ -43,6 +53,7 @@
 
   @include vp-1200 {
     padding: 20px 30px 20px 20px;
+    width: 560px;
   }
 
   @include vp-767 {
@@ -98,7 +109,7 @@
   flex-direction: column;
 
   @include vp-1200 {
-    padding-top: 4px;
+    padding-top: 3px;
     padding-bottom: 4px;
   }
 
@@ -129,6 +140,10 @@
 
   &:last-of-type {
     margin-bottom: 22px;
+
+    @include vp-1200 {
+      margin-bottom: 27px;
+    }
 
     @include vp-767 {
       margin-bottom: 15px;

@@ -42,7 +42,7 @@ const initToursSwiper = () => {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 18,
+        spaceBetween: 8,
       },
     },
   });
@@ -68,8 +68,8 @@ const initEducationSwiper = () => {
         spaceBetween: 30,
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 18,
+        slidesPerView: 3,
+        spaceBetween: 30,
       },
     },
   });
@@ -95,8 +95,8 @@ const initReviewSwiper = () => {
         spaceBetween: 30,
       },
       768: {
-        slidesPerView: 2,
-        spaceBetween: 18,
+        slidesPerView: "auto",
+        spaceBetween: 30,
       },
     },
   });
@@ -109,24 +109,13 @@ const initBenefitsSwiper = () => {
     loop: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    spaceBetween: 0,
+    spaceBetween: 30,
     speed: 300,
     initialSlide: 2,
 
     navigation: {
       nextEl: ".swiper-button-next--benefits",
       prevEl: ".swiper-button-prev--benefits",
-    },
-
-    breakpoints: {
-      1200: {
-        slidesPerView: "auto",
-        spaceBetween: 30,
-      },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 18,
-      },
     },
   });
 };
@@ -152,7 +141,7 @@ const initGalleruSwiper = () => {
       },
       768: {
         slidesPerView: "auto",
-        spaceBetween: 18,
+        spaceBetween: 5,
       },
     },
   });
@@ -163,6 +152,14 @@ export const initSwipers = () => {
   initToursSwiper();
   initEducationSwiper();
   initReviewSwiper();
-  initBenefitsSwiper();
   initGalleruSwiper();
+
+  if (window.matchMedia("(min-width:1200px)").matches) {
+    document.querySelector(".swiper-benefits").classList.add("swiper");
+    document.querySelector(".benefits__list").classList.add("swiper-wrapper");
+    Array.from(document.querySelectorAll(".benefits__item")).forEach((slide) =>
+      slide.classList.add("swiper-slide")
+    );
+    initBenefitsSwiper();
+  }
 };

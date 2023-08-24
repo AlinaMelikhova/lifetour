@@ -11,7 +11,7 @@
   }
 
   @include vp-1200 {
-    padding-top: 192px;
+    padding-top: 195px;
     padding-bottom: 183px;
     background-image: url("../img/form-tab.png");
 
@@ -45,7 +45,7 @@
   margin-left: -17px;
 
   @include vp-1200 {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     margin-left: 0;
   }
 
@@ -101,7 +101,7 @@
 
     @include vp-1200 {
       width: 266px;
-      margin: 0 auto 7px;
+      margin: 0 auto 8px;
     }
 
     @include vp-767 {
