@@ -74,6 +74,7 @@
   }
 
   @include vp-767 {
+    margin-bottom: 26px;
     font-size: 12px;
     line-height: 18px;
     max-width: 100%;
@@ -153,6 +154,7 @@
 
     @include vp-767 {
       font-size: 14px;
+      padding: 16px 15px 17px;
     }
 
     &::placeholder {

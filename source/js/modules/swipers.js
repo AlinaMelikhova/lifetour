@@ -135,13 +135,12 @@ const initGalleruSwiper = () => {
     },
 
     breakpoints: {
-      1200: {
-        slidesPerView: "auto",
+      768: {
         spaceBetween: 5,
       },
-      768: {
-        slidesPerView: "auto",
-        spaceBetween: 5,
+
+      320: {
+        spaceBetween: 3,
       },
     },
   });

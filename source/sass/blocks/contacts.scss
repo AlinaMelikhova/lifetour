@@ -10,7 +10,7 @@
 
   @include vp-767 {
     padding-top: 66px;
-    padding-bottom: 30px;
+    padding-bottom: 31px;
   }
 }
 
@@ -52,6 +52,7 @@
     font-size: 14px;
     line-height: 20px;
     max-width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -87,7 +88,7 @@
 
   @include vp-767 {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   &:last-child {
@@ -128,7 +129,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     font-size: 14px;
   }
 }
@@ -150,6 +151,16 @@
 
   @include vp-767 {
     line-height: 20px;
+  }
+
+  &-breaker {
+    @include vp-1200 {
+      display: none;
+    }
+
+    @include vp-767 {
+      display: block;
+    }
   }
 }
 
