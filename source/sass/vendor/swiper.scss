@@ -240,7 +240,7 @@
 }
 .swiper-pagination {
   position: absolute;
-  bottom: 97px;
+  bottom: 17px;
   right: 114px;
   text-align: center;
   transition: 300ms opacity;
@@ -248,12 +248,12 @@
   z-index: 10;
 
   @media (max-width: (1200px - 1px)) {
-    bottom: 90px;
+    bottom: -79px;
     right: calc(50% - 36px);
   }
 
   @media (max-width: (768 - 1px)) {
-    bottom: 40px;
+    bottom: -109px;
     right: calc(50% - 30px);
   }
 }

@@ -1,10 +1,11 @@
 .tour-card__wrapper {
-  padding: 206px 20px 27px;
+  padding: 206px 20px 26px;
   background-color: $color-dark;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include vp-1200 {
+    padding-bottom: 27px;
     min-width: 324px;
     max-width: 324px;
   }
@@ -86,6 +87,24 @@
       }
     }
   }
+
+  & h3 {
+    color: $color-light;
+    max-width: 235px;
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0;
+    font-family: $font-bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
 }
 
 .tour-card__top-list {
@@ -123,10 +142,20 @@
 
   & svg {
     margin-right: 12px;
+    display: block;
 
     @include vp-767 {
       margin-right: 13px;
     }
+  }
+
+  & span {
+    color: $color-light;
+    font-family: $font-regular;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
   }
 
   &--place {
@@ -157,37 +186,6 @@
 
   &--nights {
     min-width: 82px;
-  }
-}
-
-.tour-card__top-item-icon {
-  display: block;
-}
-
-.tour-card__top-item-description {
-  color: $color-light;
-  font-family: $font-regular;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%;
-}
-
-.tour-card__title {
-  color: $color-light;
-  max-width: 235px;
-  margin: 0;
-  margin-bottom: 17px;
-  padding: 0;
-  font-family: $font-bold;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 28px;
-
-  @include vp-767 {
-    font-size: 20px;
-    line-height: 24px;
   }
 }
 

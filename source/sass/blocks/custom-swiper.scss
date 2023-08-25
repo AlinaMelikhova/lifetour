@@ -10,6 +10,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  &-benefits {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .swiper-slide.swiper-slide--review {
@@ -61,8 +66,7 @@
   display: flex;
 
   &--tours {
-    top: 0;
-    right: 0;
+    position: static;
 
     @include vp-767 {
       top: 8px;
@@ -70,22 +74,21 @@
   }
 
   &--education {
-    top: 175px;
-    right: 120px;
+    position: static;
+    margin-right: 2px;
 
     @include vp-1200 {
-      right: 45px;
+      margin-right: 0;
     }
 
-    @include vp-767 {
-      top: 197px;
-      right: 15px;
-    }
+    // @include vp-767 {
+    //   top: 197px;
+    //   right: 15px;
+    // }
   }
 
   &--review {
-    top: 0;
-    right: 120px;
+    position: static;
 
     @include vp-1200 {
       top: 3px;
@@ -98,8 +101,9 @@
   }
 
   &--benefits {
-    bottom: 0px;
-    right: calc(50% - 39px);
+    position: static;
+    margin: 0 auto;
+    margin-top: -35px;
 
     @include vp-1200 {
       display: none;
@@ -107,17 +111,15 @@
   }
 
   &--gallery {
-    top: 66px;
-    right: 120px;
+    position: static;
 
     @include vp-1200 {
       top: 62px;
       right: 45px;
     }
 
-    @include vp-1200 {
-      top: 124px;
-      right: 15px;
+    @include vp-767 {
+      margin-left: auto;
     }
   }
 }
