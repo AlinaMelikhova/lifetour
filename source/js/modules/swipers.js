@@ -4,7 +4,7 @@ const initHeroSwiper = () => {
   // eslint-disable-next-line no-new
   new Swiper(".swiper-hero", {
     direction: "horizontal",
-    loop: false,
+    loop: true,
     slidesPerView: 1,
     speed: 300,
 
@@ -39,6 +39,7 @@ const initToursSwiper = () => {
       1200: {
         slidesPerView: 3,
         spaceBetween: 30,
+        allowTouchMove: false,
       },
       768: {
         slidesPerView: 2,
@@ -54,7 +55,7 @@ const initEducationSwiper = () => {
     direction: "horizontal",
     loop: false,
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 15,
     speed: 300,
 
     navigation: {
@@ -64,6 +65,7 @@ const initEducationSwiper = () => {
 
     breakpoints: {
       1200: {
+        allowTouchMove: false,
         slidesPerView: 4,
         spaceBetween: 30,
       },
@@ -81,7 +83,7 @@ const initReviewSwiper = () => {
     direction: "horizontal",
     loop: false,
     slidesPerView: "auto",
-    spaceBetween: 0,
+    spaceBetween: 15,
     speed: 300,
 
     navigation: {
@@ -91,6 +93,7 @@ const initReviewSwiper = () => {
 
     breakpoints: {
       1200: {
+        allowTouchMove: false,
         slidesPerView: "auto",
         spaceBetween: 30,
       },
@@ -117,6 +120,12 @@ const initBenefitsSwiper = () => {
       nextEl: ".swiper-button-next--benefits",
       prevEl: ".swiper-button-prev--benefits",
     },
+
+    breakpoints: {
+      1200: {
+        allowTouchMove: false,
+      },
+    },
   });
 };
 
@@ -135,6 +144,9 @@ const initGalleruSwiper = () => {
     },
 
     breakpoints: {
+      1200: {
+        allowTouchMove: false,
+      },
       768: {
         spaceBetween: 5,
       },

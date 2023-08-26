@@ -1,17 +1,18 @@
 .benefits__container {
-  padding-top: 136px;
+  padding-top: 95px;
 
   @include vp-1200 {
-    padding-top: 87px;
+    padding-top: 46px;
   }
 
   @include vp-767 {
-    padding-top: 31px;
+    padding-top: 1px;
   }
 }
 
 .benefits__wrapper {
   padding: 0;
+  position: relative;
 
   @include vp-1200 {
     padding: 0 45px;
@@ -23,7 +24,6 @@
 }
 
 .benefits__title {
-  margin: 0;
   margin-bottom: 47px;
   padding: 0;
   text-align: center;
@@ -55,6 +55,7 @@
 }
 
 .benefits__item {
+  background-color: $color-light;
   box-shadow: inset 0 0 0 1px rgba(2, 102, 193, 0.1);
   min-width: 380px;
   max-width: 380px;
@@ -172,5 +173,25 @@
 .benefits__item-title-breaker {
   @include vp-767 {
     display: none;
+  }
+}
+
+.benefits__clouds-image {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+
+  @include vp-1200 {
+    display: none;
+  }
+
+  &--left {
+    top: -229px;
+  }
+
+  &--right {
+    left: auto;
+    right: 0;
+    top: -46px;
   }
 }

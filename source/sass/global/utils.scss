@@ -24,6 +24,7 @@
 
 .section-title {
   margin: 0;
+  margin-top: 11px;
   padding: 0;
   color: $color-dark;
   font-family: $font-extra-bold;
@@ -39,6 +40,7 @@
 
   @include vp-767 {
     font-size: 22px;
+    margin-top: 0;
   }
 
   &::before {
