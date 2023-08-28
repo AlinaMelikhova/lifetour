@@ -691,7 +691,7 @@ button,
   }
 }
 
-.heder__links-wrapper {
+.header__mob-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,14 +703,14 @@ button,
           align-items: center;
 }
 @media (max-width: 1199px) {
-  .heder__links-wrapper {
+  .header__mob-wrapper {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
   }
 }
 @media (max-width: 767px) {
-  .heder__links-wrapper {
+  .header__mob-wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1703,11 +1703,11 @@ button,
   }
 }
 
-.tours__more-link--icon {
+.tours__more-link-icon {
   stroke: #2d383f;
 }
 @media (max-width: 767px) {
-  .tours__more-link--icon {
+  .tours__more-link-icon {
     height: 14px;
   }
 }
@@ -2456,8 +2456,8 @@ button,
 
 .team-card {
   background-color: #ffffff;
-  -webkit-box-shadow: 0 0 30 0px rgba(28, 51, 116, 0.1);
-          box-shadow: 0 0 30 0px rgba(28, 51, 116, 0.1);
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
 .team-card:last-child {
   margin-right: 0;
@@ -2843,8 +2843,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0 0 30 0px rgba(28, 51, 116, 0.1);
-          box-shadow: 0 0 30 0px rgba(28, 51, 116, 0.1);
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   width: 790px;
 }
 @media (max-width: 1199px) {
