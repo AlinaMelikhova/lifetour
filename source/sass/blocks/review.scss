@@ -67,7 +67,7 @@
 .review__item {
   padding: 20px 40px 20px 20px;
   display: flex;
-  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   width: 790px;
 
   @include vp-1200 {

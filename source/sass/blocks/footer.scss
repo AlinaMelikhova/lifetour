@@ -239,7 +239,7 @@
 .footer__social-item-wrapper {
   width: 30px;
   height: 30px;
-  box-shadow: inset 0px 0px 0px 1px rgba(45, 56, 63, 0.3);
+  box-shadow: inset 0 0 0 1px rgba(45, 56, 63, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,12 +247,12 @@
 
   &:hover,
   &:focus {
-    box-shadow: inset 0px 0px 0px 1px $color-dark;
+    box-shadow: inset 0 0 0 1px $color-dark;
     outline: none;
   }
 
   &:active {
-    box-shadow: inset 0px 0px 0px 1px $color-bright;
+    box-shadow: inset 0 0 0 1px $color-bright;
     background-color: $color-bright;
   }
 
@@ -265,7 +265,7 @@
   &--disabled:focus,
   &--disabled:active {
     cursor: auto;
-    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
     background-color: $color-transparent;
   }
 
