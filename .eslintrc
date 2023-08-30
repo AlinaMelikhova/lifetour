@@ -10,3 +10,8 @@ env:
   commonjs: true
 
 extends: "./eslintconfig.cjs"
+
+rules:
+  indent: off
+  quote-props: off
+  object-curly-spacing: off
