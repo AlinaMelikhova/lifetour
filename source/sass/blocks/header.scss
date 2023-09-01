@@ -154,8 +154,8 @@
 .header__menu {
   position: absolute;
   top: 60px;
-  left: calc(50% - 298px);
-  width: 660px;
+  left: calc(50% - 260px);
+  width: 580px;
   display: flex;
   justify-content: center;
 
@@ -291,7 +291,6 @@
   }
 
   &:hover,
-  &:focus,
   &:focus-visible {
     color: #1c3374;
     outline: none;

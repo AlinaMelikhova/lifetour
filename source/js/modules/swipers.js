@@ -43,7 +43,7 @@ const initToursSwiper = () => {
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 8,
+        spaceBetween: 12,
       },
     },
   });
