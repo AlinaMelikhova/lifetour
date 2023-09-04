@@ -505,8 +505,19 @@ button,
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
+.page-wrapper--mob-open main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 7;
+}
 .page-wrapper--mob-open {
   height: 100vh;
+  position: relative;
   overflow-y: hidden;
 }
 
@@ -661,6 +672,7 @@ button,
   .header__positioning-wrapper--mob-open {
     background-color: #ffffff;
     padding-bottom: 65px;
+    max-height: 100vh;
   }
   .header__positioning-wrapper--mob-open .header__logo-icon {
     fill: #2d383f;
@@ -674,7 +686,12 @@ button,
     display: block;
     left: 0;
     top: 0;
-    padding-top: 41px;
+    width: 100%;
+    max-height: 84vh;
+    z-index: 100;
+    overflow: auto;
+    padding-top: 0;
+    margin-top: 41px;
   }
   .header__positioning-wrapper--mob-open .header__menu-link {
     color: #2d383f;
@@ -688,7 +705,9 @@ button,
     padding-bottom: 45px;
   }
   .header__positioning-wrapper .header__menu {
-    padding-top: 38px;
+    max-height: 88vh;
+    padding-top: 0;
+    margin-top: 38px;
   }
 }
 
@@ -833,6 +852,9 @@ button,
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1080,16 +1102,6 @@ button,
   width: 100%;
   height: 100%;
   background-image: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, rgba(15, 20, 41, 0) 100%);
-}
-.hero__container--mob-open::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
 }
 
 .hero__wrapper {
@@ -2474,6 +2486,8 @@ button,
 
 .team-card {
   background-color: #ffffff;
+}
+.team-card.swiper-slide-visible {
   -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
           box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
@@ -3638,31 +3652,39 @@ button,
 .form__form-input-container input:hover:not(:disabled) {
   -webkit-box-shadow: inset 0 0 0 1px #0266c1;
           box-shadow: inset 0 0 0 1px #0266c1;
+  background-color: #ffffff;
 }
 .form__form-input-container input:focus:not(:disabled), .form__form-input-container input:active:not(:disabled) {
+  background-color: #ffffff;
   outline: none;
   -webkit-box-shadow: inset 0 0 0 1px #1c3374;
           box-shadow: inset 0 0 0 1px #1c3374;
   color: #1c3374;
 }
 .form__form-input-container input:focus:not(:disabled)::-webkit-input-placeholder, .form__form-input-container input:active:not(:disabled)::-webkit-input-placeholder {
+  background-color: #ffffff;
   color: rgba(255, 255, 255, 0);
 }
 .form__form-input-container input:focus:not(:disabled)::-moz-placeholder, .form__form-input-container input:active:not(:disabled)::-moz-placeholder {
+  background-color: #ffffff;
   color: rgba(255, 255, 255, 0);
 }
 .form__form-input-container input:focus:not(:disabled):-ms-input-placeholder, .form__form-input-container input:active:not(:disabled):-ms-input-placeholder {
+  background-color: #ffffff;
   color: rgba(255, 255, 255, 0);
 }
 .form__form-input-container input:focus:not(:disabled)::-ms-input-placeholder, .form__form-input-container input:active:not(:disabled)::-ms-input-placeholder {
+  background-color: #ffffff;
   color: rgba(255, 255, 255, 0);
 }
 .form__form-input-container input:focus:not(:disabled)::placeholder, .form__form-input-container input:active:not(:disabled)::placeholder {
+  background-color: #ffffff;
   color: rgba(255, 255, 255, 0);
 }
 .form__form-input-container input:disabled {
   cursor: auto;
   color: rgba(2, 102, 193, 0.1);
+  background-color: #ffffff;
 }
 .form__form-input-container input:disabled::-webkit-input-placeholder {
   color: rgba(2, 102, 193, 0.1);

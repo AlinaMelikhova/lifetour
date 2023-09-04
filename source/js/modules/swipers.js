@@ -57,6 +57,9 @@ const initEducationSwiper = () => {
     slidesPerView: 1,
     spaceBetween: 15,
     speed: 300,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    slideVisibleClass: 'swiper-slide-visible',
 
     navigation: {
       nextEl: '.swiper-button-next--education',

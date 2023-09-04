@@ -165,10 +165,12 @@
 
     &:hover:not(:disabled) {
       box-shadow: inset 0 0 0 1px $color-bright;
+      background-color: $color-light;
     }
 
     &:focus:not(:disabled),
     &:active:not(:disabled) {
+      background-color: $color-light;
       outline: none;
       box-shadow: inset 0 0 0 1px #1c3374;
       color: #1c3374;
@@ -176,12 +178,14 @@
 
     &:focus:not(:disabled)::placeholder,
     &:active:not(:disabled)::placeholder {
+      background-color: $color-light;
       color: $color-transparent;
     }
 
     &:disabled {
       cursor: auto;
       color: rgba(2, 102, 193, 0.1);
+      background-color: $color-light;
     }
 
     &:disabled::placeholder {
